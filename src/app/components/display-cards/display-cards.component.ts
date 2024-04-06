@@ -7,7 +7,7 @@ import { Result } from '../../services/rick-morty-api-response';
 @Component({
   selector: 'app-display-cards',
   standalone: true,
-  imports: [CardComponent, CommonModule],
+  imports: [CardComponent, CommonModule, ],
   templateUrl: './display-cards.component.html',
   styleUrl: './display-cards.component.scss'
 })
