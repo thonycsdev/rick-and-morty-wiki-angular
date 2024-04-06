@@ -1,0 +1,8 @@
+<div class="card-container" (click)="see(character.id)">
+  <img src="{{character.image}}" alt="" class="character-image"/>
+  <span class="character-name">{{character.name}}</span>
+  <div class="character-details">
+    <span>Status: {{character.status}}</span>
+    <span>{{character.location.name}}</span>
+  </div>
+</div>

@@ -1,0 +1,30 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(87, 220, 156, 0.63);
+  margin: 20px;
+}
+
+.character-image {
+  border-radius: 10px;
+}
+
+.character-name {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+
+.character-details {
+  display: flex;
+  font-size: 20px;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
