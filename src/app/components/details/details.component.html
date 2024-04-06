@@ -1,18 +1,18 @@
 <div class="container">
   <div class="header-info">
-    <img src="https://rickandmortyapi.com/api/character/avatar/303.jpeg" />
+    <img src="{{character.image}}" />
     <div class="initial-details">
-      <span>Nome: Bob Bobo</span>
+      <span>Name: {{character.name}}</span>
       <div class="quick-details">
-        <span>Status: Alive</span>
-        <span>Species: Homan</span>
-        <span>Gender:</span>
+        <span>Status: {{character.status}}</span>
+        <span>Species: {{character.species}}</span>
+        <span>Gender:{{character.gender}}</span>
       </div>
     </div>
   </div>
   <div class="body-info">
-    <span>Origin: Earth</span>
-    <span>Location: Earth</span>
+    <span>Origin: {{character.origin.name}}</span>
+    <span>Location: {{character.location.name}}</span>
   </div>
     <div class="episodes">
       <span class="title">Episodes</span>
