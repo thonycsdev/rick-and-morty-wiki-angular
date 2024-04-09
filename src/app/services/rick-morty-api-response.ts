@@ -26,3 +26,10 @@ export interface Info {
   next: string;
   prev?: any;
 }
+
+export interface EpisodeSchema {
+  id: number;
+  name: string;
+  air_date: string | Date;
+  episode: string;
+}

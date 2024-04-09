@@ -17,7 +17,14 @@
     <div class="episodes">
       <span class="title">Episodes</span>
       <div class="cards">
-        card Episode 1
+        <ul>
+          <li *ngFor="let c of episodes">
+            <p>{{c.episode}} - {{c.name}}</p>
+          </li>
+        </ul>
       </div>
     </div>
 </div>
+
+git config --global user.email"thonycout@gmail.com"
+git config --global user.name "thonycsdev"
