@@ -1,2 +1,30 @@
-<p>details works!</p>
-<h1>im herer</h1>
+<div class="container">
+  <div class="header-info">
+    <img src="{{character.image}}" />
+    <div class="initial-details">
+      <span>Name: {{character.name}}</span>
+      <div class="quick-details">
+        <span>Status: {{character.status}}</span>
+        <span>Species: {{character.species}}</span>
+        <span>Gender:{{character.gender}}</span>
+      </div>
+    </div>
+  </div>
+  <div class="body-info">
+    <span>Origin: {{character.origin.name}}</span>
+    <span>Location: {{character.location.name}}</span>
+  </div>
+    <div class="episodes">
+      <span class="title">Episodes</span>
+      <div class="cards">
+        <ul>
+          <li *ngFor="let c of episodes">
+            <p>{{c.episode}} - {{c.name}}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+</div>
+
+git config --global user.email"thonycout@gmail.com"
+git config --global user.name "thonycsdev"
