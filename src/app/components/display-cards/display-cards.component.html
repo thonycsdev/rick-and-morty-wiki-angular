@@ -1,5 +1,11 @@
-<div class="pai">
+<div class="pai" *ngIf="charaters.length > 0">
   <div *ngFor="let character of charaters">
     <app-card [character]="character" />
   </div>
 </div>
+<div *ngIf="charaters.length === 0">Loading...</div>
+<app-pagination
+  *ngIf="charaters.length > 0"
+  [pageAmount]="pagination.pages"
+  (onClickPageNumber)="Log($event)"
+/>
