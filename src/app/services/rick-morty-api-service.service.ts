@@ -4,22 +4,29 @@ import { EpisodeSchema, Result, RootObject } from './rick-morty-api-response';
 import { Observable } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class RickMortyApiServiceService {
-
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {}
 
   getData(): Observable<RootObject> {
-    return this.http.get<RootObject>("https://rickandmortyapi.com/api/character");
+    return this.http.get<RootObject>(
+      'https://rickandmortyapi.com/api/character'
+    );
   }
 
-  getDataByCharacterId(id:number): Observable<Result>{
-    return this.http.get<Result>("https://rickandmortyapi.com/api/character/" + id)
+  getDataByCharacterId(id: number): Observable<Result> {
+    return this.http.get<Result>(
+      'https://rickandmortyapi.com/api/character/' + id
+    );
   }
 
   getEpisodeDataByUrl(url: string): Observable<EpisodeSchema> {
-   return this.http.get<EpisodeSchema>(url);
+    return this.http.get<EpisodeSchema>(url);
   }
-
+  getCharactersUsingPageNumber(n: number): Observable<RootObject> {
+    return this.http.get<RootObject>(
+      'https://rickandmortyapi.com/api/character/?page=' + n
+    );
+  }
 }

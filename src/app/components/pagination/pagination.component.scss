@@ -1,0 +1,33 @@
+$backgroundColor: rgba(87, 220, 156, 0.63);
+.container {
+  margin: auto;
+  background-color: red;
+  min-width:50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  gap: 5px;
+  border-radius: 20px;
+  background-color: $backgroundColor;
+}
+
+.number {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  cursor:pointer;
+  transition: transform 1s;
+
+
+  &:hover {
+  transform: scale(1.2);
+  }
+
+}
